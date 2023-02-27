@@ -1,3 +1,93 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/variables-dark";
+@import "../../node_modules/bootstrap/scss/maps";
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/root";
+@import "../../node_modules/bootstrap/scss/utilities";
+@import "../../node_modules/bootstrap/scss/reboot";
+@import "../../node_modules/bootstrap/scss/type";
+@import "../../node_modules/bootstrap/scss/images";
+@import "../../node_modules/bootstrap/scss/containers";
+@import "../../node_modules/bootstrap/scss/grid";
+@import "../../node_modules/bootstrap/scss/helpers";
+
+/*Farger*/
+:root{
+  --textColor: rgb(105, 105, 105);
+  --textSecondaryColor: #fff;
+  --tabBackgroundColor: rgb(236, 236, 236);
+  --tabColorHover: rgb(0, 255, 242);
+  --maxWidth: 1200px;
+}
+
 body{
-  background: #9d2121;
+  margin-top: 0;
+  padding-top: 0;
+  margin-bottom: 10rem;
+  padding-bottom: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+div.container{
+  width: 100%;
+  max-width: var(--maxWidth);
+  margin: 0 auto;
+}
+
+h1{
+  font-weight: bold;
+  color: var(--textColor);
+  text-transform: uppercase;
+  border: 1px solid var(--textColor);
+  padding: 3rem;
+  margin-top: 5rem;
+}
+
+nav a{
+  color: var(--textColor);
+  margin-right: 0.5rem;
+}
+
+a.tab{
+  padding: 1rem;
+  background-color: var(--tabBackgroundColor);
+  font-size: 1.6rem;
+}
+
+.tab {
+  display: inline-block;
+  border: 1px solid var(--textColor);
+  border-bottom: none;
+  cursor: pointer;
+}
+
+.tab.active {
+  background-color: var(--tabColorHover);
+  color: var(--textSecondaryColor);
+  border: none;
+}
+
+#tabContent{
+  color: var(--textColor);
+  border: 1px solid var(--textColor);
+  padding: 1rem;
+  font-size: 1.2rem;
+  border-top: 0.4rem solid var(--tabColorHover);
+}
+
+/*For skjermer som er mindre enn 831px bred (Da begynner det å se litt rart ut)*/
+@media only screen and (max-width: 832px){
+  h1{
+    padding: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  a.tab{
+    display: block;
+  }
+
+  #tabContent{
+    font-size: 1.3rem;
+  }
 }
