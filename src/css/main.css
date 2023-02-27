@@ -2103,15 +2103,6 @@ progress {
   opacity: 0.25;
 }
 
-/*Farger*/
-:root {
-  --textColor: rgb(105, 105, 105);
-  --textSecondaryColor: #fff;
-  --tabBackgroundColor: rgb(236, 236, 236);
-  --tabColorHover: rgb(0, 255, 242);
-  --maxWidth: 1200px;
-}
-
 body {
   margin-top: 0;
   padding-top: 0;
@@ -2120,54 +2111,53 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-div.container {
+div .container {
   width: 100%;
-  max-width: var(--maxWidth);
+  max-width: 1200px;
   margin: 0 auto;
 }
 
 h1, .h1 {
   font-weight: bold;
-  color: var(--textColor);
+  color: rgb(105, 105, 105);
   text-transform: uppercase;
-  border: 1px solid var(--textColor);
+  border: 1px solid rgb(105, 105, 105);
   padding: 3rem;
   margin-top: 5rem;
 }
 
 nav a {
-  color: var(--textColor);
+  color: rgb(105, 105, 105);
   margin-right: 0.5rem;
 }
 
-a.tab {
+a .tab {
   padding: 1rem;
-  background-color: var(--tabBackgroundColor);
+  background-color: rgb(236, 236, 236);
   font-size: 1.6rem;
 }
 
 .tab {
   display: inline-block;
-  border: 1px solid var(--textColor);
+  border: 1px solid rgb(105, 105, 105);
   border-bottom: none;
   cursor: pointer;
 }
 
 .tab.active {
-  background-color: var(--tabColorHover);
-  color: var(--textSecondaryColor);
+  background-color: rgb(236, 236, 236);
+  color: #fff;
   border: none;
 }
 
 #tabContent {
-  color: var(--textColor);
-  border: 1px solid var(--textColor);
+  color: rgb(105, 105, 105);
+  border: 1px solid rgb(105, 105, 105);
   padding: 1rem;
   font-size: 1.2rem;
-  border-top: 0.4rem solid var(--tabColorHover);
+  border-top: 0.4rem solid rgb(0, 255, 242);
 }
 
-/*For skjermer som er mindre enn 831px bred (Da begynner det å se litt rart ut)*/
 @media only screen and (max-width: 832px) {
   h1, .h1 {
     padding: 1.5rem;
