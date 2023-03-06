@@ -66,13 +66,16 @@ a{
   border: none;
 }
 
-#tabContent{
-  color: $textColor;
-  border: 1px solid $textColor;
-  padding: 1rem;
-  font-size: 1.2rem;
-  border-top: 0.4rem solid $tabColorHover;
+div{
+  .tabContent{
+    color: $textColor;
+    border: 1px solid $textColor;
+    padding: 1rem;
+    font-size: 1.2rem;
+    border-top: 0.4rem solid $tabColorHover;
+  }
 }
+
 
 @media only screen and (max-width: 832px){
   h1{
@@ -84,7 +87,7 @@ a{
     display: block;
   }
 
-  #tabContent{
+  .tabContent{
     font-size: 1.3rem;
   }
 }
