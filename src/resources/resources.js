@@ -1,4 +1,4 @@
-const resources = [
+export const Resources = [
   {
       title: "W3Schools",
       url: "https://www.w3schools.com/html/",

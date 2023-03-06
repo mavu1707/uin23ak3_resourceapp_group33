@@ -1,11 +1,13 @@
 import './App.css';
 import './css/main.css';
 import Header from './components/Header';
+import Nav from './components/Nav';
 
 function App() {
   return (
     <div className='container'>
-      <h1>{Header}</h1>
+      <Header />
+      <Nav />
     </div>
   );
 }
