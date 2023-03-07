@@ -5,9 +5,7 @@ export default function TabContent(){
     <div className='tabContent'>
       {resources.map((resource, index) => (
         <div key={index}>
-          <h2>{resource.title}</h2>
-          <p>{resource.url}</p>
-          <p>Category: {resource.category}</p>
+          <li><a href={resource.url}>{resource.title}</a></li>
         </div>
       ))}
     </div>

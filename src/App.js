@@ -1,15 +1,11 @@
 import './App.css';
 import './css/main.css';
-import Header from './components/Header';
-import TabContent from './components/TabContent';
+import Layout from './components/Layout';
 
 function App() {
   return (
-    <div className='container'>
-      <Header />
-      <TabContent />
-    </div>
-  );
+    <Layout/>
+  )
 }
 
 export default App;
