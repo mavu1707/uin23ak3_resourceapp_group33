@@ -1,4 +1,8 @@
 
 export default function Nav(){
-  return <h2>kdkd</h2>
+  return (
+    <button className="tab">HTML</button>,
+    <button className="tab">ddd</button>
+
+  )
 }
