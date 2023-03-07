@@ -12,14 +12,8 @@
 @import "../../node_modules/bootstrap/scss/grid";
 @import "../../node_modules/bootstrap/scss/helpers";
 
-/*Farger*/
-:root{
-  --textColor: rgb(105, 105, 105);
-  --textSecondaryColor: #fff;
-  --tabBackgroundColor: rgb(236, 236, 236);
-  --tabColorHover: rgb(0, 255, 242);
-  --maxWidth: 1200px;
-}
+//Importing scss documents
+@import "../sass/colors.scss";
 
 body{
   margin-top: 0;
@@ -29,54 +23,60 @@ body{
   font-family: 'Roboto', sans-serif;
 }
 
-div.container{
-  width: 100%;
-  max-width: var(--maxWidth);
-  margin: 0 auto;
+div{
+  .container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 }
 
 h1{
   font-weight: bold;
-  color: var(--textColor);
+  color: $textColor;
   text-transform: uppercase;
-  border: 1px solid var(--textColor);
+  border: 1px solid $textColor;
   padding: 3rem;
   margin-top: 5rem;
 }
 
 nav a{
-  color: var(--textColor);
+  color: $textColor;
   margin-right: 0.5rem;
 }
 
-a.tab{
-  padding: 1rem;
-  background-color: var(--tabBackgroundColor);
-  font-size: 1.6rem;
+a{
+  .tab{
+    padding: 1rem;
+    background-color: $tabBackgroundColor;
+    font-size: 1.6rem;
+  }
 }
 
 .tab {
   display: inline-block;
-  border: 1px solid var(--textColor);
+  border: 1px solid $textColor;
   border-bottom: none;
   cursor: pointer;
 }
 
 .tab.active {
-  background-color: var(--tabColorHover);
-  color: var(--textSecondaryColor);
+  background-color: $tabBackgroundColor;
+  color: $textSecondaryColor;
   border: none;
 }
 
-#tabContent{
-  color: var(--textColor);
-  border: 1px solid var(--textColor);
-  padding: 1rem;
-  font-size: 1.2rem;
-  border-top: 0.4rem solid var(--tabColorHover);
+div{
+  .tabContent{
+    color: $textColor;
+    border: 1px solid $textColor;
+    padding: 1rem;
+    font-size: 1.2rem;
+    border-top: 0.4rem solid $tabColorHover;
+  }
 }
 
-/*For skjermer som er mindre enn 831px bred (Da begynner det å se litt rart ut)*/
+
 @media only screen and (max-width: 832px){
   h1{
     padding: 1.5rem;
@@ -87,7 +87,7 @@ a.tab{
     display: block;
   }
 
-  #tabContent{
+  .tabContent{
     font-size: 1.3rem;
   }
 }

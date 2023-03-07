@@ -1,12 +1,15 @@
 import './App.css';
 import './css/main.css';
 import Header from './components/Header';
+import Nav from './components/Nav';
+import TabContent from './components/TabContent';
 
 function App() {
   return (
-    <div>
-      <header>{Header}</header>
-      <h1>Hei</h1>
+    <div className='container'>
+      <Header />
+      <Nav />
+      <TabContent />
     </div>
   );
 }
