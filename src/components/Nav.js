@@ -1,12 +1,13 @@
+import { Link } from "react-router-dom";
 
 export default function Nav(){
   return (
     <nav className="tabNav">
-      <a href="/slug">HTML</a>
-      <a href="/slug">CSS</a>
-      <a href="/slug">Javascript</a>
-      <a href="/slug">React</a>
-      <a href="/slug">Headless-cms</a>
+      <Link to="/html">HTML</Link>
+      <Link to="/css">CSS</Link>
+      <Link to="/javascript">Javascript</Link>
+      <Link to="/react">React</Link>
+      <Link to="/headless-cms">Headless-cms</Link>
     </nav>
   )
 }

@@ -1,5 +1,5 @@
 import Header from "./Header"
-import TabContent from "./TabContent"
+import TabPage from "./TabPage"
 import Nav from "./Nav"
 
 export default function Layout(){
@@ -7,7 +7,7 @@ export default function Layout(){
     <div className='container'>
       <Header/>
       <Nav />
-      <TabContent />
+      <TabPage />
     </div>
   )
 }
